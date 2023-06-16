@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div.background {
+            background: lightblue url(../istockphoto-517188688-612x612.jpg) no-repeat center;
+            background-size: cover;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 400px;
+            width: 400px;
+        }
+
+        div.transbox {
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+            padding: 20px;
+            margin: 30px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th width="5%">Value</th>
+                <th width="30%">Description</th>
+
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Default value. No filter is applied to the backdrop</td>
+            </tr>
+            <tr>
+                <td><em>filter</em></td>
+                <td>A space-separated list of filter-functions like:
+                    <ul>
+                        <li>blur()</li>
+                        <li>brightness()</li>
+                        <li>contrast()</li>
+                        <li>drop-shadow()</li>
+                        <li>grayscale()</li>
+                        <li>hue-rotate()</li>
+                        <li>invert()</li>
+                        <li>opacity()</li>
+                        <li>sepia()</li>
+                        <li>saturate()</li>
+                    </ul>
+                    <p>or an url to an SVG filter that will be applied to the backdrop</p>
+                </td>
+            </tr>
+            <tr>
+                <td>initial</td>
+                <td>Sets this property to its default value.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>inherit</td>
+                <td>Inherits this property from its parent element.</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+        <h1>The backdrop-filter Property</h1>
+
+        <div class="background">
+        <div class="transbox">
+            <p>backdrop-filter: blur(5px)</p>
+        </div>
+    </div>
+    </body>
+    </html>

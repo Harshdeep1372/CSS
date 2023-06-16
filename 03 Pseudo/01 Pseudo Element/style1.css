@@ -1,0 +1,17 @@
+
+h2::after{ content: "~ ";}
+/* h2::before{ content: "Important Note : ";  } */
+h2::before{ content: "~ ";  }
+p::first-letter{
+    font-size: 36px;
+}
+p::first-line{
+    color: brown;
+}
+p::selection{
+    color: white;
+    background-color: brown;
+}
+input::placeholder{
+    color: brown;
+}
