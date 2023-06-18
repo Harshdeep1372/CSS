@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background-repeat {
+            background-image: url(../IMG/bg.jpeg);
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-repeat: round; */
+            background-repeat: space;
+        }
+
+        div[class*="background"] {
+            height: 400px;
+            border: 10px dashed rgba(3, 67, 56, 0.504);
+            outline: 10px dotted rgba(139, 4, 4, 0.504);
+            margin: 50px;
+            padding: 50px;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-repeat">
+        <h2>background-repeat</h2>
+        <p>The background-repeat property sets if/how a background image will be repeated.<br>
+
+            By default, a background-image is repeated both vertically and horizontally. <br>
+
+            Tip: The background image is placed according to the background-position property. If no background-position
+            is specified,
+            the image is always placed at the element's top left corner. <br>
+        </p>
+    </div>
+</body>
+
+</html>
