@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 30px 150px 75px 75px 75px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'header menu menu menu'
+        'hero hero hero hero'
+        'main main none image'
+        'main main none extra'
+        'banner banner banner banner';
+}
+
+.col-1 {
+    grid-area: header;
+    background-color: black;
+}
+
+.col-2 {
+    grid-area: menu;
+    background-color: red;
+}
+
+.col-3 {
+    grid-area: hero;
+    background-color: skyblue;
+}
+
+.col-4 {
+    grid-area: main;
+    background-color: rgb(0, 0, 112);
+}
+
+.col-5 {
+    grid-area: image;
+    background-color: rgb(183, 255, 231);
+}
+
+.col-6 {
+    grid-area: extra;
+    background-color: aquamarine;
+
+}
+
+.col-7 {
+    grid-area: banner;
+    background-color: rgb(92, 92, 0);
+}
+
+.col {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    .container {
+        grid-template-rows: 30px 150px 75px 75px 75px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'header header header'
+            'hero hero hero'
+            'menu main main'
+            'menu banner banner'
+            'menu extra image';
+    }
+}
+
+@media (max-width:400px) {
+    .container {
+        grid-template-rows: 30px 150px 75px 75px 75px 75px 75px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'menu'
+            'hero '
+            'main'
+            'banner'
+            'extra'
+            'image';
+    }
+}
