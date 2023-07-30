@@ -1,19 +1,22 @@
-@keyframes animName {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+@font-face {
+    font-family: "baloo_bhai";
+    src: url(../font/BalooBhai-Regular.ttf);
 }
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../font/static/Montserrat-Regular.ttf);
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: "baloo_bhai";
 }
+
+
 
 .container {
     width: 1170px;
@@ -98,20 +101,17 @@ button:hover {
 
 
 
-/* Sec_1*/
+/* Header*/
 
 .col2 {
     background-color: #6c999463;
     flex-grow: 1;
     padding: 5px 20px;
-
 }
 
 .box img {
     background-color: #a7d7c5;
     margin-left: 20px;
-
-
 }
 
 .header_text {
@@ -127,51 +127,44 @@ button:hover {
     color: black;
     text-decoration: none;
     padding: 0 50px;
-    font-family: sans-serif;
 }
 
-.box_5 {
-    overflow: hidden;
+/* Sec_1 */
+.sec_1 {
+    margin: 0 0 50px 0;
+    padding: 0 0 100px 0;
 }
 
-.background-header {
-    position: relative;
-    padding: 85px 0;
-
+.bg1 {
+    width: 95%;
+    top: 0;
+    left: 0;
 }
 
-.background-header::before {
-    position: absolute;
-    content: url(..//IMAGES/Sec1&2Shape.png);
-    /* background-color: black; */
-    right: -400px;
-    top: 190px;
-    z-index: 99999;
-
-}
-
-.img-1 {
-    width: 60%;
-    top: -100px;
-    left: 20%;
-    animation: animName 5s infinite;
-}
-
-.img-3 {
+.bg1 img {
+    width: 100%;
     display: block;
-    margin: 100px auto;
-    width: 30%;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 0.75rem #a7d7c5);
+}
 
+.img-2 {
+    top: 15%;
+    left: 15%;
+}
+
+.img-2 img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.75rem #2589b477);
 }
 
 .text-50 {
     color: #6c9894;
+    padding: 100px 0;
 }
 
 .sec1_button {
-    padding: 20px 0 100px 0;
+    padding: 10px 0;
 }
 
 .sec1_button button {
@@ -185,43 +178,46 @@ button:hover {
 
 .text-50 h1 {
     font-size: 100px;
-    font-family: sans-serif;
+    line-height: 90px;
+    margin: 80px 0 0 0;
+    padding: 70px 0 0 0;
 }
 
 .text-50 p {
+    width: 90%;
+    margin: 0 auto;
     font-size: 21px;
     font-weight: 400;
-    font-family: sans-serif;
-    padding-top: 30px;
+    padding: 10px 0;
+    font-family: "montserrat";
 }
 
 /* Sec_2 */
 .sec_2 {
     background-color: #6c9894;
-    padding: 30px 0 100px 0;
+    padding: 100px 0;
     position: relative;
-}
-
-.sec-text-main {
-    padding: 30px 0 0 0;
 }
 
 .sec-text-main h2 {
     font-size: 70px;
     color: white;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .sec-text-main p {
     font-size: 30px;
     color: white;
-    width: 70%;
+    width: 67%;
     margin: 0 auto;
-    padding: 40px 0 30px 0;
-    font-family: sans-serif;
+    padding: 40px 0 40px 0;
+    font-family: "montserrat";
+
 }
 
 .sec2_img {
-    background-image: url("../IMAGES/Sec_2_shape.png");
+    background-image: url("../image/Sec_2_shape.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -241,46 +237,58 @@ button:hover {
     padding-bottom: 40px;
     text-align: center;
     color: white;
-    font-family: sans-serif;
 }
 
-
 .sec2_text p {
-    padding: 10px 0 0 0;
+    padding: 10px 0;
     width: 70%;
     margin: 0 auto;
+    font-family: "montserrat";
 }
 
 /* Sec-3 */
 .sec_3 {
-    background-image: url(..//IMAGES/Sec_3bg.png);
+    background-image: url(..//image/Sec_3bg.png);
     padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.sec_3-img {
+    top: -80px;
+    left: -46px;
 }
 
 .sec_3_text {
+    width: 67%;
+    margin: 0 auto;
     color: #6c9894;
 }
 
 .sec_3_text h2 {
     font-size: 90px;
+    line-height: 50px;
 }
 
 .sec_3_text p {
-    font-size: 40px;
-    width: 65%;
-    padding: 30px 0;
-    margin: 0 auto;
+    font-size: 30px;
+    padding: 40px 0;
+    font-family: "montserrat";
 }
 
-.sec3_text {
+.sec3box {
     padding: 80px 0;
+}
+
+.sec3-box {
     border: 5px solid #6c9894;
     border-radius: 70%;
+    padding: 50px 0;
     text-align: center;
-
 }
 
-.sec3_text:hover {
+.sec3-box:hover {
     box-shadow: 0 0 10px 0 #6c9894 inset, 0 0 20px 2px #00d7c3;
     outline: 3px solid #00d7c3;
 }
@@ -291,10 +299,11 @@ button:hover {
 }
 
 .sec3_text p {
-    font-size: 30px;
+    font-size: 20px;
     color: #6c9894;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
+    font-family: "montserrat";
 }
 
 /* Sec_4 */
@@ -304,23 +313,28 @@ button:hover {
 
 .sec4_text {
     color: white;
-    font-family: sans-serif;
 }
 
 .sec4_text h2 {
-    font-size: 70px;
-
+    font-size: 60px;
+    line-height: 80px;
 }
 
 .sec4_text p {
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 27px;
+    font-family: "montserrat";
+}
+
+.sec4_button {
+    padding: 15px 0;
 }
 
 .sec4_button button {
-    padding: 10px 30px 5px 30px;
+    padding: 10px 70px 5px 70px;
     font-size: 20px;
     color: #6c9894;
+    background-color: white;
     border: none;
     border-radius: 5px;
 }
@@ -332,55 +346,53 @@ button:hover {
 }
 
 .sec_4_text {
-    padding-left: 20px;
-    width: 80%;
+    width: 81%;
+    margin: 0 auto;
 }
 
 /* Sec-5 */
 .sec_5 {
-    background-image: url(..//IMAGES/Sec_5bg.png);
-    position: relative;
+    background-image: url(..//image/Sec_5bg.png);
 }
 
-.sec_5::before {
-    content: "sdgdfghfu";
-    position: absolute;
-    right: 0;
-
+.sec5-img {
+    width: 80%;
+    margin: 70px;
 }
 
-.sec5_text {
-    padding-left: 50px;
+.sec5-img img {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 .sec_5_text h2 {
-    color: #6c9894;
-    font-size: 50px;
-    font-family: sans-serif;
+    font-size: 90px;
+    line-height: 100px;
+    color: #3f827c;
+    font-weight: 600;
+    padding: 15px 30px;
 }
 
 .sec_5_text p {
-    font-size: 30px;
-    color: #6c9894;
-    padding: 20px 0;
+    font-size: 1.3rem;
+    color: #3f827c;
+    padding: 15px 30px;
+    font-family: "montserrat";
+    width: 90%;
 }
 
 .sec5_button button {
-    padding: 10px 40px;
-    font-size: 20px;
-    color: white;
-    background-color: #6c9894;
+    border-radius: 4px;
+    background-color: #3f827c;
+    padding: 10px 70px 5px 70px;
+    color: #f4f9f4;
+    font-size: 1rem;
+    margin: 15px 30px;
     border: none;
-    border-radius: 5px;
 }
 
-.sec5_img {
-    padding: 40px 30px;
-}
 
-.sec5_img img {
-    display: block;
-}
 
 /* sec6 */
 .sec_6 {
@@ -395,44 +407,48 @@ button:hover {
 
 .sec6_text h1 {
     font-size: 80px;
+    line-height: 80px;
 }
 
 .sec6_text p {
     font-size: 30px;
-    padding: 30px 0 50px 0;
-    width: 70%;
+    padding: 50px 0;
+    width: 67%;
     margin: 0 auto;
+    font-family: "montserrat";
 }
 
 .sec6_box1 {
     border: none;
     background-color: white;
-    font-family: sans-serif;
     border-radius: 10px;
+    padding: 20px 0;
 }
 
 .sec6_box1 h2 {
     color: #6c9894;
     font-size: 40px;
-    padding: 15px 0 20px 0;
+}
+
+.sec_6-img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 .sec6_box1 h3 {
     color: #6c9894;
     font-size: 30px;
-    padding: 10px 0 20px 0;
-}
-
-.sec6_box1 img {
-    padding-bottom: 30px;
+    padding: 10px 0;
 }
 
 .sec6_box1 p {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     color: #6c9894;
-    font-size: 30px;
-    padding-bottom: 40px;
+    font-size: 20px;
+    font-family: "montserrat";
+    padding: 20px 0;
 }
 
 .sec6_box1 button {
@@ -444,23 +460,15 @@ button:hover {
     border-radius: 10px;
 }
 
-.sec6_box1 {
-    padding-bottom: 30px;
-}
-
 /* sec-7 */
 .sec_7 {
-    background-image: url(../IMAGES/Sec_7bg.png);
-
-}
-
-.sec7_1_img {
-    padding-top: 100px;
+    background-image: url(../image/Sec_7bg.png);
+    padding: 100px 0;
 }
 
 .sec7_2_img {
-    top: 21.5vh;
-    left: 64.1vh;
+    top: 8.1%;
+    left: 36%;
 
 }
 
@@ -480,27 +488,25 @@ button:hover {
     padding-top: 20px;
 }
 
-.sec7_text h4 {
+.sec7_text p {
     font-size: 40px;
-    padding: 20px 0;
+    font-family: "montserrat";
 }
 
 .sec7_text h2 {
-    padding: 20px 0 100px 0;
+    font-size: 40px;
+    padding: 20px 0 20px 0;
 }
 
 /* ----SEC-8---- */
 .sec_8 {
     background-color: #6c9894;
-    padding: 0 0 100px 0;
+    padding: 100px 0;
 }
 
 .sec8_text1 h2 {
-
-    padding: 100px 0 0 0;
     font-size: 75px;
     color: #f4f9f4;
-    font-family: sans-serif;
 }
 
 .sec8_text1 p {
@@ -510,6 +516,7 @@ button:hover {
     color: #f4f9f4;
     font-weight: 400;
     padding: 30px 0 10px 0;
+    font-family: "montserrat";
 
 }
 
@@ -538,23 +545,22 @@ button:hover {
 
 .sec9_text h2 {
     font-size: 50px;
-
 }
 
 .sec9_text p {
     font-size: 30px;
     width: 100%;
-    padding-top: 20px;
-    font-family: sans-serif;
+    font-family: "montserrat";
+    padding: 20px 0;
+
 }
 
 .sec9_link h2 {
     font-size: 50px;
-
 }
 
 .sec9_link {
-    padding-top: 20px;
+    padding: 20px 0;
     font-size: 25px;
 }
 
@@ -566,7 +572,7 @@ button:hover {
 }
 
 .sec9_link ul li a {
-    font-family: sans-serif;
+    font-family: "montserrat";
     text-decoration: none;
     display: flex;
     color: #6c9894;
@@ -574,18 +580,3 @@ button:hover {
     align-items: center;
 
 }
-
-/* 
-.button {
-    width: 170px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    display: inline-block;
-} */
