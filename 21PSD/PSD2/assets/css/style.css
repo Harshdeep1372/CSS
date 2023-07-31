@@ -147,8 +147,8 @@ button:hover {
 }
 
 .img-2 {
-    top: 15%;
-    left: 15%;
+    top: 5.7em;
+    left: 5.8em;
 }
 
 .img-2 img {
@@ -211,7 +211,7 @@ button:hover {
     color: white;
     width: 67%;
     margin: 0 auto;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 10px 0;
     font-family: "montserrat";
 
 }
@@ -283,8 +283,10 @@ button:hover {
 
 .sec3-box {
     border: 5px solid #6c9894;
-    border-radius: 70%;
-    padding: 50px 0;
+    border-radius: 50%;
+    padding: 30px 0;
+    height: 300px;
+    width: 300px;
     text-align: center;
 }
 
@@ -467,8 +469,8 @@ button:hover {
 }
 
 .sec7_2_img {
-    top: 8.1%;
-    left: 36%;
+    top: 2.05em;
+    left: 26.3em;
 
 }
 
