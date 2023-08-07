@@ -1,0 +1,22 @@
+.img {
+    /* background-image: url(bird-colorful-gradient-design-vector_343694-2506.avif); */
+    background-color: #AAA59D;
+
+}
+
+.h-bg {
+    mix-blend-mode: multiply;
+}
+
+.img2 {
+    display: flex;
+    width: 20%;
+
+}
+
+img {
+    aspect-ratio: 6/4;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
